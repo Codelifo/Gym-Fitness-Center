@@ -51,3 +51,49 @@
 }
 
 /* navbar style end here */
+
+/* banner style start here */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.banner_content{
+    max-width: 520px;
+
+}
+.banner_title{
+    font-size: 4.85rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+#miama{
+    font-family: 'Miama';
+    font-style: italic;
+    font-weight: 400;
+    line-height: 0;
+}
+.banner_description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.btn_primary, .btn_secondary{
+    padding: 16px 45px;
+    border-radius: 42px;
+    background-color: rgba(230, 83, 60, 1);
+    border: none;
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: white;
+    margin-right: 5px;
+}
+.btn_secondary{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+/* banner style end here */
