@@ -162,7 +162,7 @@
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
 }
-.btn_primary, .btn_secondary, .mobile, .btn_run{
+.btn_primary, .btn_secondary, .mobile{
     padding: 16px 45px;
     border-radius: 42px;
     background-color: rgba(230, 83, 60, 1);
@@ -250,8 +250,122 @@
    height: 100%;
    border-radius: 18px;
    Object-fit: none;
-   Object-position: 66% 33%;
+   object-position: 66% 31%;
+   zoom: 80%;
    
+}
+/* Bmi section style start */
+.Bmi_content_section{
+    padding: 60px 0px;
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.Bmi_calculator{
+    background-color: #222222;
+}
+
+.Chart_title{
+    font-size: 2rem;
+    font-weight: 900;
+}
+table, th , td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    padding: 10px;
+}
+th{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+    padding: 10px 40px;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: start;
+}
+/* Bmi_calculator style start here */
+.Bmi_calculator{
+    display: flex;
+    justify-content: space-between;
+    padding:  20px 150px;
+}
+.calculater_section{
+    max-width: 577px;
+    /* border: 2px solid red; */
+}
+.input_grid{
+    display: grid;
+    grid-template-areas: 
+    "height Weight"
+    "age gender"
+    "activity activity"
+    ;
+    gap: 12px;
+    margin-top: 34px;
+
+}
+
+
+
+#height{
+    grid-area: height;
+    padding: 13px 0px 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #383838;
+}
+#Weight{
+    grid-area: Weight;
+    padding: 13px 0px 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #383838;
+}
+#age{
+    grid-area: age;
+    padding: 13px 0px 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #383838;
+}
+#gender{
+    grid-area: gender;
+    padding: 13px 0px 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #383838;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+#activity{
+    grid-area: activity;
+    padding: 13px 0px 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #383838;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn_run, .btn_calculator{
+    padding: 16px 70px;
+    border-radius: 42px;
+    background-color: rgba(230, 83, 60, 1);
+    border: none;
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: white;
+}
+.calculater_title{
+    font-size: 1.75rem;
+    font-weight: 900;
 }
 
 
@@ -274,8 +388,8 @@
   .banner_content{
     padding-left: 10px;
   }
-  .btn_primary{
-    display: none;
+  .btn_secondary{
+    padding: 16px 20px;
   }
   .banner_img{
     padding-top: 30px;
@@ -288,11 +402,34 @@
  /* run section */
  .run_section{
     flex-direction: column;
+    margin: 14px;
+ }
+ .run_content{
+    padding: 31px 33px 0px 33px;
+ }
+ .btn_run{
+    padding: 16px 103px;
  }
  .runner_img{
+    width: 287px;
+    height: 170px;
     padding: 30px;
  }
 
+/* Bmi Calculator style */
+ .Bmi_calculator{
+    flex-direction: column;
+    padding: 10px;
+ }
+ .input_grid{
+    gap: 8px;
+ }
+ #height, #Weight,#age, #gender, #activity{
+    padding: 10px 0px 10px 10px;
+ }
+ .Bmi_content_section{
+    text-align: center;
+ }
 }
 
 @media screen and (min-width:577px) and (max-width:992px){
