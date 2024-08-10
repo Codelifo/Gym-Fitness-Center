@@ -367,6 +367,98 @@ input::placeholder{
     font-size: 1.75rem;
     font-weight: 900;
 }
+/* Teams section style start here */
+.team_content{
+    padding: 60px 0px;
+}
+.team_members{
+    max-width: 1060px;
+    background-color: #383838;
+    color: #000000;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 272px);
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    gap: 20px;
+    padding: 20px;
+}
+.team_member_1{
+    background-image: url("./images/trainer1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    border-radius: 18px;
+    /* opacity: 0.8; */
+    position: relative;
+    
+    
+}
+.team_text{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #FFFFFF;
+
+}
+.team_text h6{
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    
+}
+.team_text p{
+    font-size: 1rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+.team_member_2{
+    background-image: url("./images/trainer2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    border-radius: 18px;
+    /* opacity: 0.8; */
+    position: relative;
+}
+.team_member_3{
+    background-image: url("./images/trainer3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    border-radius: 18px;
+    /* opacity: 0.8; */
+    position: relative;
+}
+.team_member_4{
+    background-image: url("./images/trainer4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    border-radius: 18px;
+    /* opacity: 0.8;    */
+    position: relative;
+}
+.team_member_5{
+    background-image: url("./images/trainer5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    border-radius: 18px;
+    /* opacity: 0.8; */
+    position: relative;
+}
+.team_member_6{
+    background-image: url("./images/trainer6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    border-radius: 18px;
+    /* opacity: 0.8; */
+    position: relative;
+}
 
 
 
@@ -429,6 +521,12 @@ input::placeholder{
  }
  .Bmi_content_section{
     text-align: center;
+ }
+
+ .team_members{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 272px);
+    margin: 10px;
  }
 }
 
