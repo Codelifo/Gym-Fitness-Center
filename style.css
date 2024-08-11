@@ -29,11 +29,12 @@
 
 /* navbar style start here */
 .header{
-    max-width: 1440px;
+
     background-color: #111111de;
-    margin:  0 auto;
 }
 .nav{
+    max-width: 1440px;
+    margin:  0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -264,7 +265,9 @@
 .Bmi_calculator{
     background-color: #222222;
 }
-
+.Chart_section{
+    /* border: 2px solid red; */
+}
 .Chart_title{
     font-size: 2rem;
     font-weight: 900;
@@ -288,6 +291,12 @@ td{
     text-align: start;
 }
 /* Bmi_calculator style start here */
+.Bmi_container{
+    max-width: 1060px;
+    display: flex;
+    gap: 100px;
+    margin: 0 auto;
+}
 .Bmi_calculator{
     display: flex;
     justify-content: space-between;
@@ -368,6 +377,9 @@ input::placeholder{
     font-weight: 900;
 }
 /* Teams section style start here */
+.our_teams{
+    padding-bottom: 50px;
+}
 .team_content{
     padding: 60px 0px;
 }
@@ -386,6 +398,8 @@ input::placeholder{
 }
 .team_member_1{
     background-image: url("./images/trainer1.png");
+    background-color: #0000004d;
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 30%;
@@ -416,6 +430,8 @@ input::placeholder{
 }
 .team_member_2{
     background-image: url("./images/trainer2.png");
+    background-color: #0000004d;
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 30%;
@@ -425,6 +441,8 @@ input::placeholder{
 }
 .team_member_3{
     background-image: url("./images/trainer3.png");
+    background-color: #0000004d;
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 30%;
@@ -434,6 +452,8 @@ input::placeholder{
 }
 .team_member_4{
     background-image: url("./images/trainer4.png");
+    background-color: #0000004d;
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 30%;
@@ -443,6 +463,8 @@ input::placeholder{
 }
 .team_member_5{
     background-image: url("./images/trainer5.png");
+    background-color: #0000004d;
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 30%;
@@ -452,6 +474,8 @@ input::placeholder{
 }
 .team_member_6{
     background-image: url("./images/trainer6.png");
+    background-color: #0000004d;
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 30%;
@@ -459,6 +483,60 @@ input::placeholder{
     /* opacity: 0.8; */
     position: relative;
 }
+
+/* footer section style here */
+.footer{
+    background-color: #222222;
+    padding: 50px 100px 10px 50px;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.footer_log{
+    max-width: 443px;
+
+}
+.footer_header{
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #E6533C;
+    margin: 0;
+}
+
+.feature_one ul, .feature_two ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.feature_title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.feature_one li , .feature_two li{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+hr{
+    margin-top: 80px;
+    max-width: 1060px;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.copy_right{
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 30px 0px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 
 
 
@@ -510,8 +588,10 @@ input::placeholder{
 
 /* Bmi Calculator style */
  .Bmi_calculator{
-    flex-direction: column;
     padding: 10px;
+ }
+ .Bmi_container, .footer_container{
+    flex-direction: column;
  }
  .input_grid{
     gap: 8px;
@@ -527,6 +607,9 @@ input::placeholder{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 272px);
     margin: 10px;
+ }
+ .footer{
+    padding:30px 20px ;
  }
 }
 
