@@ -184,6 +184,7 @@ html{
     font-weight: 600;
     color: white;
     margin-right: 5px;
+    cursor: pointer;
 }
 .mobile{
     display: none;
@@ -191,7 +192,7 @@ html{
 .btn_secondary{
     background-color: transparent;
     border: 1px solid #FFFFFF;
-
+    cursor: pointer;
 }
 
 /* banner style end here */
@@ -277,9 +278,7 @@ html{
 .Bmi_calculator{
     background-color: #222222;
 }
-.Chart_section{
-    /* border: 2px solid red; */
-}
+
 .Chart_title{
     font-size: 2rem;
     font-weight: 900;
@@ -385,6 +384,7 @@ input::placeholder{
     font-size: 1.12rem;
     font-weight: 600;
     color: white;
+    cursor: pointer;
 }
 .calculater_title{
     font-size: 1.75rem;
