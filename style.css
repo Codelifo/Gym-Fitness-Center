@@ -500,6 +500,8 @@ input::placeholder{
     padding: 50px 100px 10px 50px;
 }
 .footer_container{
+    max-width: 1060px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
 
@@ -549,8 +551,11 @@ hr{
 
 /* unique section style here */
 .plan_div{
+    max-width: 1060px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    /* outline: 1px solid red; */
 }
 .card_container{
     max-width: 300px;
@@ -584,13 +589,20 @@ hr{
     text-align: center;
     color: #383838;
 }
-.card_container > p{
-    text-align: center;
-    font-size: 1.2rem;
+.feature_plan{
+    text-align: start;
+    font-size: 1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     margin: 10px;
+    /* outline: 1px solid red; */
+    padding-left: 50px;
 }
+#check_mark, #x_mark{
+    color: #E6533C;
+    padding-right: 5px;
+}
+
 .card_button{
     padding: 15px 20px;
     border: none;
